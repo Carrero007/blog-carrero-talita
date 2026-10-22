@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Administração — GeoBlog</title><link rel="stylesheet" href="css/styles.css"></head><body class="admin">
+<header class="site"><div class="wrap"><a class="brand" href="index.html">Geo<span>Blog</span> · Admin</a><nav><button class="btn alt hidden" id="bPw" type="button">Alterar senha</button> <button class="btn alt hidden" id="bOut" type="button">Sair</button></nav></div></header>
+<main class="wrap" style="padding-top:24px"><div id="msg" role="alert"></div>
+<section id="vLogin" class="box narrow"><h1 style="margin-top:0">Entrar</h1>
+<div class="fld"><label class="l" for="pw">Senha</label><input id="pw" type="password" autocomplete="current-password"></div><button class="btn" id="bIn" type="button">Entrar</button></section>
+
+<section id="vList" class="hidden"><div class="box"><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><h1 style="margin:0">Artigos</h1><button class="btn" id="bNew" type="button">+ Novo artigo</button></div>
+<div class="row" style="margin-top:14px"><div><label class="l" for="aq">Pesquisar</label><input id="aq" type="search"></div><div><label class="l" for="as">Status</label><select id="as"><option value="">Todos</option><option value="published">Publicados</option><option value="draft">Rascunhos</option></select></div></div>
+<div id="items"></div></div></section>
+
+<section id="vEdit" class="hidden"><div class="box"><h1 style="margin-top:0" id="eh">Artigo</h1><div id="bk"></div>
+<div class="row"><div class="fld"><label class="l" for="title">Título *</label><input id="title" maxlength="150"></div><div class="fld"><label class="l" for="slug">Slug (automático se vazio)</label><input id="slug" maxlength="80"></div></div>
+<div class="fld"><label class="l" for="desc">Descrição *</label><textarea id="desc" rows="2" maxlength="300"></textarea></div>
+<div class="row"><div class="fld"><label class="l" for="cover">URL da imagem de capa</label><input id="cover" type="url"></div><div class="fld"><label class="l" for="calt">Texto alternativo da capa</label><input id="calt" maxlength="200"></div></div>
+<div id="cprev"></div><div class="fld"><label class="l" for="cap">Legenda</label><input id="cap" maxlength="200"></div>
+<div class="row"><div class="fld"><label class="l" for="cat">Categoria *</label><input id="cat" maxlength="40"></div><div class="fld"><label class="l" for="tags">Tags (separadas por vírgula)</label><input id="tags"></div></div>
+<div class="fld"><span class="l" style="font:600 .8rem system-ui;color:var(--mut)" id="cl">Conteúdo *</span><div class="tb" role="toolbar" aria-label="Formatação" id="tb"></div><div class="ed" id="ed" contenteditable="true" role="textbox" aria-multiline="true" aria-labelledby="cl"></div></div>
+<div class="fld"><label class="l" for="refs">Referências (opcional)</label><textarea id="refs" rows="3" maxlength="3000"></textarea></div>
+<div class="fld"><label class="l" for="meta">Metadados (opcional)</label><input id="meta" maxlength="1000"></div>
+<div class="row"><div class="fld"><label class="l" for="dc">Data de criação</label><input id="dc" type="datetime-local"></div><div class="fld"><label class="l" for="dp">Data/hora de publicação (Brasília)</label><input id="dp" type="datetime-local"></div></div>
+<h2>Perguntas <span class="meta" id="qc"></span></h2><div id="qs"></div><button class="btn alt" id="aqn" type="button">+ Adicionar pergunta</button>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px"><button class="btn alt" id="bDraft" type="button">Salvar rascunho</button><button class="btn" id="bPub" type="button">Publicar</button><button class="btn alt" id="bPrev" type="button">Pré-visualizar</button><button class="btn alt" id="bBack" type="button">Voltar</button></div></div></section></main>
+<dialog id="dPrev"><div id="pv"></div><p><button class="btn" id="cPrev" type="button">Fechar</button></p></dialog>
+<dialog id="dPw"><h2 style="margin-top:0">Alterar senha</h2><div class="fld"><label class="l" for="pc">Senha atual</label><input id="pc" type="password" autocomplete="current-password"></div><div class="fld"><label class="l" for="pn">Nova senha (mín. 8)</label><input id="pn" type="password" autocomplete="new-password"></div><button class="btn" id="sPw" type="button">Salvar</button> <button class="btn alt" id="xPw" type="button">Cancelar</button></dialog>
+<script src="js/config.js"></script><script src="js/api.js"></script><script src="js/post.js"></script><script src="js/admin.js"></script></body></html>

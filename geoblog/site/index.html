@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>GeoBlog — Geografia do Ensino Médio</title>
+    <meta
+      name="description"
+      content="GeoBlog: artigos de Geografia para o Ensino Médio."
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#artigos">Ir para os artigos</a>
+    <header class="site">
+      <div class="wrap">
+        <a class="brand" href="index.html">Geo<span>Blog</span></a>
+        <nav aria-label="Principal">
+          <a href="#inicio">Início</a><a href="#artigos">Artigos</a>
+        </nav>
+      </div>
+    </header>
+    <section class="hero" id="inicio">
+      <div class="wrap">
+        <div>
+          <div class="coords">Atlas de Geografia · Ensino Médio</div>
+          <h1>Geo<span>Blog</span></h1>
+          <p>
+            Relevo, clima, biomas, população e território explicados com
+            clareza. Artigos escritos por estudantes, com perguntas para testar
+            o que você aprendeu.
+          </p>
+          <div class="authors">
+            Por Pedro Agostinho Carrero e Talita Assis Godoy · DS3
+          </div>
+        </div>
+        <div class="stage">
+          <canvas
+            id="globe"
+            role="img"
+            aria-label="Globo terrestre girando lentamente"
+          ></canvas>
+          <div class="cap">
+            <span id="gl">Lon −50° · Lat 10°</span
+            ><span>Projeção ortográfica</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="wrap" id="artigos">
+      <h2 class="sec">Publicações</h2>
+      <div class="tools" role="search">
+        <div>
+          <label class="l" for="q">Pesquisar</label
+          ><input id="q" type="search" placeholder="Título, descrição ou tag" />
+        </div>
+        <div>
+          <label class="l" for="cat">Categoria</label
+          ><select id="cat">
+            <option value="">Todas</option>
+          </select>
+        </div>
+        <div>
+          <label class="l" for="tag">Tag</label
+          ><select id="tag">
+            <option value="">Todas</option>
+          </select>
+        </div>
+        <div>
+          <label class="l" for="ord">Ordenar</label
+          ><select id="ord">
+            <option value="desc">Mais recentes</option>
+            <option value="asc">Mais antigos</option>
+          </select>
+        </div>
+      </div>
+      <div id="out" aria-live="polite"></div>
+    </main>
+    <footer class="site">
+      <div class="wrap">
+        GeoBlog © <span id="y"></span> · Pedro Agostinho Carrero e Talita Assis
+        Godoy · DS3<br />
+      </div>
+    </footer>
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/globe.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
