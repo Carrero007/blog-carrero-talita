@@ -16,7 +16,6 @@ Comunicação: `fetch` POST com `Content-Type: text/plain` (evita preflight CORS
 8. Acesse `https://SEU-USUARIO.github.io/SEU-REPO/`. Não é preciso configurar CORS.
 
 ## Uso
-- Painel: `admin.html` (link "Área restrita" no rodapé). Senha inicial `333333333` — **troque em "Alterar senha"** no primeiro acesso. Esquecida? Rode `resetPasswordToInitial` no editor do Apps Script.
 - Novo artigo → preencha, monte exatamente 3 perguntas → **Publicar**. Rascunhos aceitam menos de 3. Data de publicação futura agenda o artigo.
 
 ## Segurança
