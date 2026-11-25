@@ -1,6 +1,6 @@
-# Blog de Geografia
+# GeoBlog — Geografia para o ENEM e vestibulares
 
-Blog estático com artigos de Geografia para ENEM e vestibulares, feito como trabalho para a disciplina de Geografia. Sem backend, sem banco de dados e sem integração com planilhas: apenas HTML, CSS e JavaScript.
+Blog estático de Geografia feito como trabalho para a disciplina de Geografia, por **Pedro Agostinho Carrero** e **Talita Assis Godoy** (DS3). Sem backend, sem banco de dados e sem integração com planilhas: apenas HTML, CSS e JavaScript.
 
 ## Conteúdo
 
@@ -13,12 +13,14 @@ Blog estático com artigos de Geografia para ENEM e vestibulares, feito como tra
 7. Revolução Industrial
 8. Primavera Árabe
 
-<<<<<<< HEAD
-Cada artigo traz texto explicativo, tabelas, tópicos que mais caem nas provas e questões no estilo ENEM/vestibulares, com gabarito comentado.
-=======
-## Uso
-- Novo artigo → preencha, monte exatamente 3 perguntas → **Publicar**. Rascunhos aceitam menos de 3. Data de publicação futura agenda o artigo.
->>>>>>> dcf22c3932421007b93e3a69615018c24726bb60
+Cada artigo traz texto explicativo, tabelas, tópicos que mais caem nas provas, referências e 2 questões no estilo ENEM/vestibulares. As questões têm alternativas clicáveis e botão **Responder**: ao acertar, o gabarito comentado é exibido.
+
+## Recursos da página
+
+- Hero com globo terrestre animado (canvas).
+- Grade de cards que leva a cada artigo.
+- Indicador lateral de leitura: destaca o artigo e a seção atuais, mostra o progresso de cada artigo e o progresso geral. No celular, vira uma faixa fixa no topo.
+- Layout responsivo e respeito à preferência de "reduzir movimento" do sistema.
 
 ## Estrutura
 
@@ -26,7 +28,7 @@ Cada artigo traz texto explicativo, tabelas, tópicos que mais caem nas provas e
 .
 ├── index.html   # página única com todos os artigos
 ├── style.css    # estilos
-├── script.js    # menu mobile, destaque do índice e comportamento das questões
+├── script.js    # cards, questões, indicador de leitura e globo
 └── README.md
 ```
 
@@ -36,8 +38,9 @@ Abra o `index.html` no navegador. Não há instalação nem build.
 
 ## Como editar
 
-- **Imagem de capa:** no `index.html`, troque `COLE_AQUI_O_LINK_DA_IMAGEM` no atributo `src` da tag `<img class="capa">` de cada artigo. Enquanto o link não for preenchido (ou se falhar), a imagem fica oculta.
+- **Imagem de capa:** no `index.html`, troque `COLE_AQUI_O_LINK_DA_IMAGEM` no atributo `src` da tag `<img class="capa">` de cada artigo. A mesma imagem aparece no card do artigo. Enquanto o link não for preenchido (ou se falhar), a imagem fica oculta.
 - **Data de publicação:** troque `DD/MM/AAAA` dentro da tag `<time>` de cada artigo.
+- **Questões:** ficam dentro de `<details class="q">` em cada artigo. Mantenha o formato `Gabarito: X.` no parágrafo `.gab`, pois o `script.js` usa essa letra para corrigir.
 - **Cores:** variáveis no início do `style.css` (`:root`).
 
 ## Hospedagem no GitHub Pages
@@ -52,6 +55,6 @@ Abra o `index.html` no navegador. Não há instalação nem build.
 - As questões foram elaboradas no estilo ENEM/vestibulares, para estudo; não são reproduções literais de provas.
 - As referências listadas em cada artigo são fontes de consulta gerais.
 
-## Autor
+## Autores
 
-Carrero e Talita
+Pedro Agostinho Carrero e Talita Assis Godoy · DS3
