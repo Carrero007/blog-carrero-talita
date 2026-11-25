@@ -1,26 +1,52 @@
-# GeoBlog — guia de implantação
+# Blog de Geografia
 
-**Arquitetura:** site estático (HTML/CSS/JS puro) no **GitHub Pages** + **Google Apps Script** como API + **Google Planilhas** como único banco.
-Comunicação: `fetch` POST com `Content-Type: text/plain` (evita preflight CORS, que o Apps Script não suporta); o redirecionamento do `/exec` é seguido automaticamente; respostas em JSON `{ok, data | code, message}`.
+Blog estático com artigos de Geografia para ENEM e vestibulares, feito como trabalho para a disciplina de Geografia. Sem backend, sem banco de dados e sem integração com planilhas: apenas HTML, CSS e JavaScript.
 
-## Backend (Apps Script)
-1. Acesse script.google.com → **Novo projeto** → nomeie "GeoBlog API".
-2. No arquivo `Code.gs` do projeto, apague tudo e cole o conteúdo inteiro de `backend/Code.gs` (arquivo único, tudo junto).
-3. Selecione a função **setupGeoBlog** e clique em **Executar**. Autorize as permissões (Planilhas e Propriedades). Ela cria a planilha "GeoBlog - Banco de Dados" (abas Posts e Questions), configura o fuso America/Sao_Paulo e a senha inicial com hash+salt. Pode ser reexecutada sem apagar dados. O link da planilha aparece em **Execuções/Registro**.
-4. **Implantar → Nova implantação → App da Web**: *Executar como:* **Eu**; *Quem pode acessar:* **Qualquer pessoa**. Copie a URL terminada em `/exec`.
-5. Ao alterar o código depois: **Implantar → Gerenciar implantações → Editar → Nova versão** (a URL se mantém).
+## Conteúdo
 
-## Site
-6. Em `site/js/config.js`, cole a URL `/exec`.
-7. Crie um repositório no GitHub, envie o conteúdo de `site/` na raiz, e ative **Settings → Pages → Deploy from branch (main /root)**.
-8. Acesse `https://SEU-USUARIO.github.io/SEU-REPO/`. Não é preciso configurar CORS.
+1. Camadas da Terra
+2. Placas Tectônicas
+3. Terremotos
+4. Biomas
+5. Climas
+6. Camadas da atmosfera
+7. Revolução Industrial
+8. Primavera Árabe
 
-## Uso
-- Painel: `admin.html` (link "Área restrita" no rodapé). Senha inicial `333333333` — **troque em "Alterar senha"** no primeiro acesso. Esquecida? Rode `resetPasswordToInitial` no editor do Apps Script.
-- Novo artigo → preencha, monte exatamente 3 perguntas → **Publicar**. Rascunhos aceitam menos de 3. Data de publicação futura agenda o artigo.
+Cada artigo traz texto explicativo, tabelas, tópicos que mais caem nas provas e questões no estilo ENEM/vestibulares, com gabarito comentado.
 
-## Segurança
-Senha validada só no servidor (hash SHA-256 iterado + salt em Propriedades do Script); token de sessão aleatório guardado hasheado no cache (2 h), mantido **apenas em memória** no navegador (recarregar a página exige novo login); todas as ações admin exigem sessão; bloqueio global após 5 senhas erradas (15 min); HTML sanitizado no servidor por lista de tags permitidas; gabarito nunca sai na API pública; respostas de visitantes não são enviadas nem guardadas.
+## Estrutura
 
-## Limitações
-Cotas gratuitas do Apps Script; primeira chamada pode demorar (cold start); bloqueio de login é global (senha única); sessão pode ser perdida se o cache do Google for limpo; não há cache de listagem.
+```
+.
+├── index.html   # página única com todos os artigos
+├── style.css    # estilos
+├── script.js    # menu mobile, destaque do índice e comportamento das questões
+└── README.md
+```
+
+## Como usar
+
+Abra o `index.html` no navegador. Não há instalação nem build.
+
+## Como editar
+
+- **Imagem de capa:** no `index.html`, troque `COLE_AQUI_O_LINK_DA_IMAGEM` no atributo `src` da tag `<img class="capa">` de cada artigo. Enquanto o link não for preenchido (ou se falhar), a imagem fica oculta.
+- **Data de publicação:** troque `DD/MM/AAAA` dentro da tag `<time>` de cada artigo.
+- **Cores:** variáveis no início do `style.css` (`:root`).
+
+## Hospedagem no GitHub Pages
+
+1. Crie um repositório no GitHub e envie os arquivos na raiz.
+2. Vá em **Settings → Pages**.
+3. Em **Source**, escolha **Deploy from a branch**, selecione a branch `main` e a pasta `/ (root)`.
+4. Salve e aguarde alguns minutos. O site ficará em `https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/`.
+
+## Observações
+
+- As questões foram elaboradas no estilo ENEM/vestibulares, para estudo; não são reproduções literais de provas.
+- As referências listadas em cada artigo são fontes de consulta gerais.
+
+## Autor
+
+Carrero e Talita

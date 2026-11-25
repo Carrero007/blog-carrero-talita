@@ -1,34 +1,35 @@
 <!doctype html>
 <html lang="pt-BR">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>GeoBlog — Geografia do Ensino Médio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GeoBlog — Geografia para o ENEM e vestibulares</title>
     <meta
       name="description"
-      content="GeoBlog: artigos de Geografia para o Ensino Médio."
+      content="Artigos de Geografia para ENEM e vestibulares."
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <a class="skip" href="#artigos">Ir para os artigos</a>
     <header class="site">
       <div class="wrap">
-        <a class="brand" href="index.html">Geo<span>Blog</span></a>
+        <a class="brand" href="#inicio">Geo<span>Blog</span></a>
         <nav aria-label="Principal">
           <a href="#inicio">Início</a><a href="#artigos">Artigos</a>
         </nav>
       </div>
     </header>
+
     <section class="hero" id="inicio">
       <div class="wrap">
         <div>
           <div class="coords">Atlas de Geografia · Ensino Médio</div>
           <h1>Geo<span>Blog</span></h1>
           <p>
-            Relevo, clima, biomas, população e território explicados com
-            clareza. Artigos escritos por estudantes, com perguntas para testar
-            o que você aprendeu.
+            Relevo, clima, biomas, economia e geopolítica explicados com
+            clareza, com perguntas no estilo vestibular para testar o que você
+            aprendeu.
           </p>
           <div class="authors">
             Por Pedro Agostinho Carrero e Talita Assis Godoy · DS3
@@ -47,44 +48,1056 @@
         </div>
       </div>
     </section>
+
     <main class="wrap" id="artigos">
       <h2 class="sec">Publicações</h2>
-      <div class="tools" role="search">
-        <div>
-          <label class="l" for="q">Pesquisar</label
-          ><input id="q" type="search" placeholder="Título, descrição ou tag" />
-        </div>
-        <div>
-          <label class="l" for="cat">Categoria</label
-          ><select id="cat">
-            <option value="">Todas</option>
-          </select>
-        </div>
-        <div>
-          <label class="l" for="tag">Tag</label
-          ><select id="tag">
-            <option value="">Todas</option>
-          </select>
-        </div>
-        <div>
-          <label class="l" for="ord">Ordenar</label
-          ><select id="ord">
-            <option value="desc">Mais recentes</option>
-            <option value="asc">Mais antigos</option>
-          </select>
+      <div class="grid" id="cards"></div>
+
+      <h2 class="sec leitura" id="leitura">Leitura</h2>
+      <div class="leitura-wrap">
+        <aside id="lateral" aria-label="Onde você está na leitura"></aside>
+        <div class="artigos">
+          <!-- ============ 1 ============ -->
+          <article class="post" id="camadas-da-terra">
+            <span class="badge">Geologia</span>
+            <h2>
+              Camadas da Terra: estrutura interna, composição e características
+            </h2>
+            <p class="meta">Publicado em <time>27/10/2026</time></p>
+            <img
+              class="capa"
+              src="https://www.infoescola.com/wp-content/uploads/2011/11/camadas-da-terra-1181453587.jpg"
+              alt="Corte transversal da Terra mostrando crosta, manto, núcleo externo e núcleo interno."
+            />
+            <p class="lead">
+              A estrutura interna da Terra é formada por camadas com diferentes
+              composições, temperaturas e propriedades físicas.
+            </p>
+
+            <h3>Como conhecemos o interior da Terra?</h3>
+            <p>
+              O interior não pode ser observado diretamente. Usamos evidências
+              indiretas: ondas sísmicas, materiais vulcânicos, experimentos de
+              laboratório sob alta pressão e estudos dos campos gravitacional e
+              magnético. As <strong>ondas S</strong> não atravessam líquidos; as
+              <strong>ondas P</strong> atravessam sólidos e líquidos. Essa
+              diferença revela os limites entre as camadas.
+            </p>
+
+            <h3>Crosta</h3>
+            <p>
+              Camada mais externa e fina, sólida. Pode ser
+              <strong>continental</strong> (mais espessa) ou
+              <strong>oceânica</strong> (mais fina, predominantemente
+              basáltica). Junto com a parte superior rígida do manto, forma a
+              <strong>litosfera</strong> — crosta e litosfera não são sinônimos.
+            </p>
+
+            <h3>Manto</h3>
+            <p>
+              Vai até cerca de 2.900 km de profundidade e é a camada de maior
+              volume, formada por rochas silicáticas ricas em magnésio e ferro.
+              É majoritariamente sólido, mas se deforma lentamente ao longo do
+              tempo geológico. Na parte superior está a
+              <strong>astenosfera</strong>, mais deformável, sobre a qual a
+              litosfera se apoia.
+            </p>
+
+            <h3>Núcleo</h3>
+            <p>
+              Composto principalmente por ferro e níquel. O
+              <strong>núcleo externo</strong> é líquido e, por seu movimento,
+              gera o campo magnético (geodínamo). O
+              <strong>núcleo interno</strong> é sólido: a enorme pressão impede
+              a fusão. O limite entre eles está a cerca de 5.150 km; o centro
+              fica a aproximadamente 6.371 km da superfície.
+            </p>
+
+            <h3>Composição química × comportamento físico</h3>
+            <table>
+              <tr>
+                <th>Critério</th>
+                <th>Divisão</th>
+              </tr>
+              <tr>
+                <td>Composição química</td>
+                <td>Crosta, manto e núcleo</td>
+              </tr>
+              <tr>
+                <td>Propriedades físicas</td>
+                <td>
+                  Litosfera, astenosfera, manto inferior, núcleo externo e
+                  núcleo interno
+                </td>
+              </tr>
+            </table>
+
+            <h3>O que mais cai</h3>
+            <ul>
+              <li>Crosta × litosfera × astenosfera</li>
+              <li>Estado físico de cada camada</li>
+              <li>Ondas sísmicas e o núcleo externo líquido</li>
+              <li>Núcleo externo e campo magnético</li>
+            </ul>
+
+            <section class="questoes">
+              <h3>Questões de vestibular</h3>
+              <details class="q">
+                <summary>
+                  <strong>Questão 1.</strong> A análise do comportamento das
+                  ondas sísmicas permitiu concluir que o núcleo externo da Terra
+                  é líquido. O argumento que sustenta essa conclusão é:
+                </summary>
+                <ol type="a">
+                  <li>as ondas P não se propagam em meios sólidos.</li>
+                  <li>
+                    as ondas S não se propagam em meios líquidos e deixam de ser
+                    registradas além de certa profundidade.
+                  </li>
+                  <li>
+                    as ondas superficiais aumentam de velocidade no núcleo.
+                  </li>
+                  <li>
+                    as ondas P e S têm a mesma velocidade em qualquer material.
+                  </li>
+                  <li>as ondas S são mais rápidas que as P no manto.</li>
+                </ol>
+                <p class="gab">
+                  <strong>Gabarito: B.</strong> As ondas S (transversais) não
+                  atravessam líquidos; sua ausência além do manto indica o
+                  núcleo externo líquido.
+                </p>
+              </details>
+              <details class="q">
+                <summary>
+                  <strong>Questão 2.</strong> Sobre a estrutura interna da
+                  Terra, é correto afirmar que:
+                </summary>
+                <ol type="a">
+                  <li>litosfera e crosta são sinônimos.</li>
+                  <li>
+                    o núcleo interno é líquido devido às altas temperaturas.
+                  </li>
+                  <li>
+                    a litosfera inclui a crosta e a parte superior rígida do
+                    manto.
+                  </li>
+                  <li>a astenosfera é a camada mais externa do planeta.</li>
+                  <li>o manto é a camada de menor volume.</li>
+                </ol>
+                <p class="gab">
+                  <strong>Gabarito: C.</strong> A litosfera é crosta + manto
+                  superior rígido, apoiada sobre a astenosfera.
+                </p>
+              </details>
+            </section>
+            <p class="refs">
+              <strong>Referências:</strong> FUVEST — acervo de provas e programa
+              do vestibular; UFRGS 2023 — questão sobre crosta, manto e núcleo.
+            </p>
+          </article>
+
+          <!-- ============ 2 ============ -->
+          <article class="post" id="placas-tectonicas">
+            <span class="badge">Geologia</span>
+            <h2>
+              Placas Tectônicas: movimentos, limites e transformação do relevo
+            </h2>
+            <p class="meta">Publicado em <time>27/10/2026</time></p>
+            <img
+              class="capa"
+              src="https://guiadoestudante.abril.com.br/wp-content/uploads/sites/4/2016/10/terremoto-placas-tectonicas-6002.jpg?crop=1&resize=1212,909"
+              alt="Mapa das principais placas tectônicas, com limites e direções de movimento."
+            />
+            <p class="lead">
+              O movimento das placas transforma a superfície terrestre e se
+              relaciona à formação de montanhas, vulcões e terremotos.
+            </p>
+
+            <h3>O que são placas tectônicas?</h3>
+            <p>
+              Grandes blocos da litosfera (crosta + manto superior rígido) que
+              se movem alguns centímetros por ano sobre o manto mais deformável.
+              As principais: Sul-Americana, Africana, do Pacífico,
+              Norte-Americana, Euroasiática, Indo-Australiana e Antártica. O
+              movimento resulta de várias forças (calor interno, subducção,
+              expansão nas dorsais), não apenas de correntes de convecção.
+            </p>
+
+            <h3>Deriva continental e Wegener</h3>
+            <p>
+              No início do século XX, Alfred Wegener propôs que os continentes
+              já estiveram unidos na <strong>Pangeia</strong>. Evidências:
+              encaixe das costas da América do Sul e da África, fósseis
+              idênticos em continentes separados, estruturas geológicas
+              correspondentes e registros de antigas glaciações. Faltava um
+              mecanismo. Pesquisas posteriores (fundo oceânico, paleomagnetismo,
+              expansão do assoalho oceânico) levaram à
+              <strong>tectônica de placas</strong>, teoria mais abrangente que a
+              hipótese da deriva.
+            </p>
+
+            <h3>Tipos de limites</h3>
+            <table>
+              <tr>
+                <th>Limite</th>
+                <th>Movimento</th>
+                <th>Resultados</th>
+                <th>Exemplo</th>
+              </tr>
+              <tr>
+                <td>Convergente</td>
+                <td>Aproximação</td>
+                <td>Subducção, fossas, vulcanismo, dobramentos</td>
+                <td>
+                  Andes (Nazca × Sul-Americana); Himalaia (Índia × Eurásia)
+                </td>
+              </tr>
+              <tr>
+                <td>Divergente</td>
+                <td>Afastamento</td>
+                <td>Riftes, nova crosta oceânica</td>
+                <td>Dorsal Mesoatlântica</td>
+              </tr>
+              <tr>
+                <td>Transformante</td>
+                <td>Deslizamento lateral</td>
+                <td>Falhas e terremotos</td>
+                <td>Falha de San Andreas</td>
+              </tr>
+            </table>
+
+            <h3>E o Brasil?</h3>
+            <p>
+              O Brasil está no interior da Placa Sul-Americana, longe de limites
+              ativos, por isso tem poucos terremotos destrutivos. Ainda assim há
+              abalos intraplaca, por reativação de falhas antigas.
+            </p>
+
+            <h3>O que mais cai</h3>
+            <ul>
+              <li>Evidências da deriva continental</li>
+              <li>Deriva × tectônica de placas</li>
+              <li>Tipos de limites e exemplos</li>
+              <li>Formação dos Andes e do Himalaia</li>
+              <li>Distribuição de terremotos e vulcões</li>
+            </ul>
+
+            <section class="questoes">
+              <h3>Questões de vestibular</h3>
+              <details class="q">
+                <summary>
+                  <strong>Questão 1.</strong> A Cordilheira dos Andes, na borda
+                  ocidental da América do Sul, é explicada pela:
+                </summary>
+                <ol type="a">
+                  <li>separação entre as placas Sul-Americana e Africana.</li>
+                  <li>
+                    subducção da Placa de Nazca sob a Placa Sul-Americana.
+                  </li>
+                  <li>colisão entre as placas Indiana e Euroasiática.</li>
+                  <li>ação exclusiva da erosão fluvial.</li>
+                  <li>movimento transformante entre Nazca e Antártica.</li>
+                </ol>
+                <p class="gab">
+                  <strong>Gabarito: B.</strong> Placa oceânica (Nazca) mergulha
+                  sob a continental, gerando fossa, vulcanismo e soerguimento.
+                </p>
+              </details>
+              <details class="q">
+                <summary>
+                  <strong>Questão 2.</strong> A Dorsal Mesoatlântica e a Falha
+                  de San Andreas representam, respectivamente, limites:
+                </summary>
+                <ol type="a">
+                  <li>convergente e divergente.</li>
+                  <li>transformante e convergente.</li>
+                  <li>divergente e transformante.</li>
+                  <li>divergente e convergente.</li>
+                  <li>convergente e transformante.</li>
+                </ol>
+                <p class="gab">
+                  <strong>Gabarito: C.</strong> A dorsal marca afastamento de
+                  placas; San Andreas, deslizamento lateral.
+                </p>
+              </details>
+            </section>
+            <p class="refs">
+              <strong>Referências:</strong> FUVEST 2019 — deriva continental e
+              tectônica de placas; UNICAMP 2024 — terremotos e placas na
+              Turquia; FUVEST — programa de Geografia.
+            </p>
+          </article>
+
+          <!-- ============ 3 ============ -->
+          <article class="post" id="terremotos">
+            <span class="badge">Geologia</span>
+            <h2>Terremotos: causas, ondas sísmicas, magnitude e impactos</h2>
+            <p class="meta">Publicado em <time>27/10/2026</time></p>
+            <img
+              class="capa"
+              src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/b18f/live/171c6930-ab98-11ed-8f65-71bfa0525ce3.png.webp"
+              alt="Representação de uma falha geológica liberando energia durante um terremoto."
+            />
+            <p class="lead">
+              Terremotos resultam da liberação repentina de energia acumulada
+              nas rochas, gerando ondas sísmicas.
+            </p>
+
+            <h3>Como se formam</h3>
+            <p>
+              Tensões tectônicas se acumulam em falhas geológicas até ocorrer
+              ruptura ou deslizamento súbito. A maioria dos grandes sismos
+              ocorre nos limites de placas, mas existem sismos intraplaca,
+              vulcânicos e induzidos por atividade humana.
+            </p>
+
+            <h3>Hipocentro e epicentro</h3>
+            <p>
+              <strong>Hipocentro (foco):</strong> ponto interno onde começa a
+              ruptura. <strong>Epicentro:</strong> ponto da superfície acima do
+              hipocentro. O epicentro não é necessariamente o local de maior
+              destruição.
+            </p>
+
+            <h3>Ondas sísmicas</h3>
+            <ul>
+              <li>
+                <strong>P (primárias):</strong> longitudinais, mais rápidas,
+                atravessam sólidos e líquidos.
+              </li>
+              <li>
+                <strong>S (secundárias):</strong> transversais, só atravessam
+                sólidos.
+              </li>
+              <li>
+                <strong>Superficiais:</strong> propagam-se perto da superfície e
+                causam grande parte dos danos.
+              </li>
+            </ul>
+
+            <h3>Magnitude × intensidade</h3>
+            <p>
+              <strong>Magnitude</strong> mede o tamanho do evento e a energia
+              liberada (hoje, magnitude de momento, Mw). Cada unidade equivale a
+              cerca de 10 vezes mais amplitude e ~31,6 vezes mais energia.
+              <strong>Intensidade</strong> descreve os efeitos observados em
+              cada local e varia de região para região.
+            </p>
+
+            <h3>Por que alguns são mais destrutivos?</h3>
+            <p>
+              Profundidade do foco, distância da ruptura, tipo de solo
+              (sedimentos amplificam o tremor), qualidade das construções,
+              densidade populacional e preparo da população. Terremotos
+              submarinos de grande magnitude podem gerar
+              <strong>tsunamis</strong>, mas nem todos geram.
+            </p>
+
+            <h3>É possível prever?</h3>
+            <p>
+              Não com precisão de dia, hora e magnitude. É possível mapear áreas
+              de risco e usar sistemas de alerta, que avisam após o início do
+              evento, antes da chegada das ondas mais destrutivas.
+            </p>
+
+            <h3>O que mais cai</h3>
+            <ul>
+              <li>Hipocentro × epicentro</li>
+              <li>Ondas P e S</li>
+              <li>Magnitude × intensidade</li>
+              <li>Terremotos e tsunamis</li>
+              <li>Poucos grandes terremotos no Brasil</li>
+            </ul>
+
+            <section class="questoes">
+              <h3>Questões de vestibular</h3>
+              <details class="q">
+                <summary>
+                  <strong>Questão 1.</strong> Dois terremotos de mesma magnitude
+                  provocaram números muito diferentes de vítimas. Isso se
+                  explica porque:
+                </summary>
+                <ol type="a">
+                  <li>magnitude mede apenas a profundidade do foco.</li>
+                  <li>
+                    os danos dependem também de fatores como solo, construções,
+                    densidade populacional e distância da ruptura.
+                  </li>
+                  <li>
+                    terremotos de mesma magnitude liberam energias diferentes.
+                  </li>
+                  <li>apenas o epicentro determina os danos.</li>
+                  <li>a intensidade é sempre igual à magnitude.</li>
+                </ol>
+                <p class="gab">
+                  <strong>Gabarito: B.</strong> A magnitude não determina
+                  sozinha os impactos sociais.
+                </p>
+              </details>
+              <details class="q">
+                <summary>
+                  <strong>Questão 2.</strong> Um terremoto de magnitude 7 em
+                  relação a um de magnitude 6 libera, aproximadamente:
+                </summary>
+                <ol type="a">
+                  <li>o dobro de energia.</li>
+                  <li>10% a mais de energia.</li>
+                  <li>10 vezes mais energia.</li>
+                  <li>cerca de 31,6 vezes mais energia.</li>
+                  <li>100 vezes mais energia.</li>
+                </ol>
+                <p class="gab">
+                  <strong>Gabarito: D.</strong> A escala é logarítmica: cada
+                  unidade ≈ 31,6 vezes mais energia.
+                </p>
+              </details>
+            </section>
+            <p class="refs">
+              <strong>Referências:</strong> UNICAMP 2024 — terremotos na
+              Turquia; UNICAMP 2019 — contato entre placas e ondas sísmicas;
+              FUVEST — acervo oficial de provas.
+            </p>
+          </article>
+
+          <!-- ============ 4 ============ -->
+          <article class="post" id="biomas">
+            <span class="badge">Biogeografia</span>
+            <h2>
+              Biomas: o que são, como funcionam e sua importância para o planeta
+            </h2>
+            <p class="meta">Publicado em <time>19/11/2026</time></p>
+            <img
+              class="capa"
+              src="https://static.todamateria.com.br/upload/di/st/distribuicaodosbiomas.jpg"
+              alt="Mapa da distribuição dos biomas no mundo."
+            />
+            <p class="lead">
+              Bioma é um conjunto amplo de ecossistemas com clima, vegetação e
+              fauna semelhantes e adaptados.
+            </p>
+
+            <h3>Fatores que definem os biomas</h3>
+            <ul>
+              <li>
+                <strong>Clima:</strong> temperatura, chuvas e sazonalidade.
+              </li>
+              <li>
+                <strong>Solo e relevo:</strong> fertilidade, drenagem, altitude.
+              </li>
+              <li>
+                <strong>Interações biológicas:</strong> relações entre plantas,
+                animais, fungos e microrganismos.
+              </li>
+            </ul>
+
+            <h3>Grandes biomas globais</h3>
+            <ol>
+              <li>
+                <strong>Florestas tropicais:</strong> quentes e úmidas,
+                altíssima biodiversidade.
+              </li>
+              <li>
+                <strong>Savanas:</strong> estação seca e chuvosa definidas;
+                árvores esparsas e gramíneas.
+              </li>
+              <li>
+                <strong>Desertos:</strong> pouquíssima chuva e grande amplitude
+                térmica diária.
+              </li>
+              <li>
+                <strong>Tundra e taiga:</strong> altas latitudes, invernos
+                longos e rigorosos.
+              </li>
+            </ol>
+
+            <h3>Biomas do Brasil (IBGE)</h3>
+            <table>
+              <tr>
+                <th>Bioma</th>
+                <th>Características</th>
+              </tr>
+              <tr>
+                <td>Amazônia</td>
+                <td>
+                  Floresta equatorial, maior biodiversidade, clima quente e
+                  úmido
+                </td>
+              </tr>
+              <tr>
+                <td>Cerrado</td>
+                <td>
+                  Savana com estações bem marcadas, solos ácidos, árvores de
+                  troncos retorcidos; berço de nascentes de grandes bacias
+                </td>
+              </tr>
+              <tr>
+                <td>Mata Atlântica</td>
+                <td>
+                  Muito devastada, restam fragmentos; alta biodiversidade e
+                  muitas espécies endêmicas
+                </td>
+              </tr>
+              <tr>
+                <td>Caatinga</td>
+                <td>Semiárido nordestino, vegetação adaptada à seca</td>
+              </tr>
+              <tr>
+                <td>Pampa</td>
+                <td>Campos do Sul, vegetação rasteira</td>
+              </tr>
+              <tr>
+                <td>Pantanal</td>
+                <td>Planície alagável, ciclo de cheia e seca</td>
+              </tr>
+            </table>
+
+            <h3>Importância</h3>
+            <p>
+              Regulam o ciclo da água, armazenam carbono, protegem os solos da
+              erosão e fornecem alimentos, medicamentos e outros recursos.
+            </p>
+
+            <section class="questoes">
+              <h3>Questões de vestibular</h3>
+              <details class="q">
+                <summary>
+                  <strong>Questão 1.</strong> Bioma de clima semiárido, com
+                  vegetação adaptada à escassez de água, característico do
+                  interior do Nordeste brasileiro:
+                </summary>
+                <ol type="a">
+                  <li>Cerrado.</li>
+                  <li>Pampa.</li>
+                  <li>Caatinga.</li>
+                  <li>Mata Atlântica.</li>
+                  <li>Pantanal.</li>
+                </ol>
+                <p class="gab"><strong>Gabarito: C.</strong> Caatinga.</p>
+              </details>
+              <details class="q">
+                <summary>
+                  <strong>Questão 2.</strong> O principal fator natural que
+                  determina a distribuição dos biomas no planeta é:
+                </summary>
+                <ol type="a">
+                  <li>o clima, em especial temperatura e precipitação.</li>
+                  <li>a densidade populacional.</li>
+                  <li>a presença de rodovias.</li>
+                  <li>o tipo de governo.</li>
+                  <li>a distância das capitais.</li>
+                </ol>
+                <p class="gab">
+                  <strong>Gabarito: A.</strong> Clima (temperatura e chuvas) é o
+                  principal determinante da vegetação.
+                </p>
+              </details>
+            </section>
+            <p class="refs">
+              <strong>Referências:</strong> IBGE — Biomas e Sistema
+              Costeiro-Marinho do Brasil; ODUM, E. P.; BARRETT, G. W.
+              <em>Fundamentos de ecologia</em>; CAMPBELL, N. A. et al.
+              <em>Biologia</em>.
+            </p>
+          </article>
+
+          <!-- ============ 5 ============ -->
+          <article class="post" id="climas">
+            <span class="badge">Climatologia</span>
+            <h2>Climas: fatores, tipos e a diferença entre tempo e clima</h2>
+            <p class="meta">Publicado em <time>19/11/2026</time></p>
+            <img
+              class="capa"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOj_ICwENakmXgb93Zglg0OZJve7kVFp9Dkekf4C4MZw&s=10"
+              alt="Mapa mundial das zonas climáticas."
+            />
+            <p class="lead">
+              O clima é o padrão médio das condições atmosféricas de um lugar ao
+              longo de muitos anos.
+            </p>
+
+            <h3>Tempo × clima</h3>
+            <p>
+              <strong>Tempo atmosférico</strong> é o estado da atmosfera em um
+              momento e lugar (hoje chove). <strong>Clima</strong> é a sucessão
+              habitual desses estados ao longo de décadas (a região costuma ter
+              verões chuvosos).
+            </p>
+
+            <h3>Elementos e fatores do clima</h3>
+            <p>
+              <strong>Elementos:</strong> temperatura, umidade, pressão
+              atmosférica, ventos e precipitação.
+              <strong>Fatores:</strong> latitude, altitude, maritimidade e
+              continentalidade, correntes marítimas, massas de ar e relevo.
+            </p>
+
+            <h3>Principais tipos de clima</h3>
+            <table>
+              <tr>
+                <th>Clima</th>
+                <th>Características</th>
+              </tr>
+              <tr>
+                <td>Equatorial</td>
+                <td>Quente e úmido o ano todo, chuvas abundantes (Amazônia)</td>
+              </tr>
+              <tr>
+                <td>Tropical</td>
+                <td>Verão chuvoso e inverno seco (Centro-Oeste, Sudeste)</td>
+              </tr>
+              <tr>
+                <td>Semiárido</td>
+                <td>Chuvas escassas e irregulares (sertão nordestino)</td>
+              </tr>
+              <tr>
+                <td>Subtropical</td>
+                <td>
+                  Chuvas bem distribuídas, estações definidas (Sul do Brasil)
+                </td>
+              </tr>
+              <tr>
+                <td>Temperado</td>
+                <td>Quatro estações bem marcadas, médias latitudes</td>
+              </tr>
+              <tr>
+                <td>Polar e de montanha</td>
+                <td>Muito frio, em altas latitudes ou altitudes</td>
+              </tr>
+            </table>
+
+            <h3>Fenômenos importantes</h3>
+            <p>
+              <strong>El Niño:</strong> aquecimento anormal das águas do
+              Pacífico equatorial, que altera chuvas em várias regiões.
+              <strong>La Niña:</strong> resfriamento anormal.
+              <strong>Efeito estufa:</strong> processo natural essencial à vida;
+              seu agravamento pela ação humana (queima de combustíveis fósseis)
+              intensifica o aquecimento global.
+            </p>
+
+            <section class="questoes">
+              <h3>Questões de vestibular</h3>
+              <details class="q">
+                <summary>
+                  <strong>Questão 1.</strong> A diferença entre tempo
+                  atmosférico e clima está:
+                </summary>
+                <ol type="a">
+                  <li>apenas na região estudada.</li>
+                  <li>
+                    na escala temporal: o tempo é o estado momentâneo; o clima é
+                    o padrão ao longo de muitos anos.
+                  </li>
+                  <li>no fato de o clima ser sempre mais quente.</li>
+                  <li>na ausência de chuvas no clima.</li>
+                  <li>no uso de instrumentos diferentes.</li>
+                </ol>
+                <p class="gab"><strong>Gabarito: B.</strong></p>
+              </details>
+              <details class="q">
+                <summary>
+                  <strong>Questão 2.</strong> Cidades litorâneas costumam ter
+                  menor amplitude térmica que cidades do interior na mesma
+                  latitude, em razão:
+                </summary>
+                <ol type="a">
+                  <li>da continentalidade.</li>
+                  <li>da maior altitude.</li>
+                  <li>
+                    da maritimidade, pois a água aquece e esfria mais lentamente
+                    que a terra.
+                  </li>
+                  <li>da ausência de ventos.</li>
+                  <li>do relevo plano.</li>
+                </ol>
+                <p class="gab"><strong>Gabarito: C.</strong></p>
+              </details>
+            </section>
+            <p class="refs">
+              <strong>Referências:</strong> IBGE — Atlas geográfico escolar;
+              INMET — Instituto Nacional de Meteorologia; INPE/CPTEC — El Niño e
+              La Niña.
+            </p>
+          </article>
+
+          <!-- ============ 6 ============ -->
+          <article class="post" id="atmosfera">
+            <span class="badge">Climatologia</span>
+            <h2>Camadas da atmosfera: características e importância</h2>
+            <p class="meta">Publicado em <time>19/11/2026</time></p>
+            <img
+              class="capa"
+              src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/camadas-atmosfera-terrestre-segundo-variacao-temperatura-5bb7a422d0d9c.jpg"
+              alt="Esquema das camadas da atmosfera terrestre."
+            />
+            <p class="lead">
+              A atmosfera é a camada gasosa que envolve a Terra, protege a vida
+              e regula o clima.
+            </p>
+
+            <h3>Composição</h3>
+            <p>
+              Cerca de 78% de nitrogênio, 21% de oxigênio e 1% de outros gases
+              (argônio, dióxido de carbono, vapor de água etc.).
+            </p>
+
+            <h3>As camadas (de baixo para cima)</h3>
+            <table>
+              <tr>
+                <th>Camada</th>
+                <th>Características</th>
+              </tr>
+              <tr>
+                <td>Troposfera</td>
+                <td>
+                  Cerca de 12 km (varia com a latitude). Concentra a maior parte
+                  do ar e do vapor de água; ocorrem nuvens, chuvas e ventos. A
+                  temperatura diminui com a altitude.
+                </td>
+              </tr>
+              <tr>
+                <td>Estratosfera</td>
+                <td>
+                  Até ~50 km. Contém a camada de ozônio, que absorve radiação
+                  ultravioleta; a temperatura aumenta com a altitude.
+                </td>
+              </tr>
+              <tr>
+                <td>Mesosfera</td>
+                <td>
+                  Até ~85 km. Temperaturas muito baixas; meteoros se desintegram
+                  ao atravessá-la.
+                </td>
+              </tr>
+              <tr>
+                <td>Termosfera</td>
+                <td>
+                  Até ~600 km. Temperatura elevada; ocorre a ionosfera, que
+                  reflete ondas de rádio, e as auroras.
+                </td>
+              </tr>
+              <tr>
+                <td>Exosfera</td>
+                <td>Camada final, que se funde gradualmente com o espaço.</td>
+              </tr>
+            </table>
+
+            <h3>Camada de ozônio</h3>
+            <p>
+              O ozônio (O₃) filtra a radiação ultravioleta, prejudicial a seres
+              vivos. O uso de gases CFC (clorofluorcarbonos) destruiu parte
+              dessa camada; o
+              <strong>Protocolo de Montreal (1987)</strong> baniu essas
+              substâncias e a camada vem se recuperando.
+            </p>
+
+            <section class="questoes">
+              <h3>Questões de vestibular</h3>
+              <details class="q">
+                <summary>
+                  <strong>Questão 1.</strong> Camada da atmosfera onde ocorrem
+                  os fenômenos meteorológicos, como nuvens e chuvas:
+                </summary>
+                <ol type="a">
+                  <li>Estratosfera.</li>
+                  <li>Mesosfera.</li>
+                  <li>Termosfera.</li>
+                  <li>Exosfera.</li>
+                  <li>Troposfera.</li>
+                </ol>
+                <p class="gab"><strong>Gabarito: E.</strong></p>
+              </details>
+              <details class="q">
+                <summary>
+                  <strong>Questão 2.</strong> O Protocolo de Montreal teve como
+                  objetivo:
+                </summary>
+                <ol type="a">
+                  <li>reduzir as emissões de CO₂ de forma imediata.</li>
+                  <li>
+                    eliminar substâncias que destroem a camada de ozônio, como
+                    os CFCs.
+                  </li>
+                  <li>proibir o uso de energia nuclear.</li>
+                  <li>proteger florestas tropicais.</li>
+                  <li>limitar a pesca em alto-mar.</li>
+                </ol>
+                <p class="gab"><strong>Gabarito: B.</strong></p>
+              </details>
+            </section>
+            <p class="refs">
+              <strong>Referências:</strong> INPE — Camada de ozônio; NASA —
+              Earth's atmosphere; ONU — Protocolo de Montreal.
+            </p>
+          </article>
+
+          <!-- ============ 7 ============ -->
+          <article class="post" id="revolucao-industrial">
+            <span class="badge">Geografia Humana e Econômica</span>
+            <h2>
+              Revolução Industrial: fases, consequências e impactos no espaço
+              geográfico
+            </h2>
+            <p class="meta">Publicado em <time>23/11/2026</time></p>
+            <img
+              class="capa"
+              src="https://static.todamateria.com.br/upload/re/vo/revolucao-industrial-og.jpg"
+              alt="Fábrica têxtil inglesa do século XIX com máquinas a vapor."
+            />
+            <p class="lead">
+              A Revolução Industrial mudou a forma de produzir, de viver e de
+              organizar as cidades e o espaço mundial.
+            </p>
+
+            <h3>Origem na Inglaterra</h3>
+            <p>
+              Começou na Inglaterra, em meados do século XVIII, favorecida por:
+              acúmulo de capital (comércio e colonialismo), grandes reservas de
+              carvão e ferro, mão de obra liberada pelos cercamentos no campo,
+              mercado consumidor colonial e estabilidade política após a
+              Revolução Gloriosa.
+            </p>
+
+            <h3>Fases</h3>
+            <table>
+              <tr>
+                <th>Fase</th>
+                <th>Período</th>
+                <th>Marcas</th>
+              </tr>
+              <tr>
+                <td>1ª</td>
+                <td>~1760–1850</td>
+                <td>Carvão, máquina a vapor, indústria têxtil, ferrovias</td>
+              </tr>
+              <tr>
+                <td>2ª</td>
+                <td>~1850–1945</td>
+                <td>
+                  Aço, petróleo, eletricidade, motor a combustão, indústria
+                  química, linha de montagem; Alemanha, EUA, Japão
+                </td>
+              </tr>
+              <tr>
+                <td>3ª</td>
+                <td>após ~1950</td>
+                <td>
+                  Informática, robótica, telecomunicações, biotecnologia
+                  (Revolução Técnico-Científico-Informacional)
+                </td>
+              </tr>
+            </table>
+
+            <h3>Consequências</h3>
+            <ul>
+              <li>
+                <strong>Urbanização:</strong> êxodo rural e crescimento
+                acelerado das cidades, com moradias precárias.
+              </li>
+              <li>
+                <strong>Classes sociais:</strong> burguesia industrial e
+                proletariado; jornadas longas, trabalho infantil, surgimento de
+                sindicatos.
+              </li>
+              <li>
+                <strong>Meio ambiente:</strong> poluição do ar e da água, uso
+                intensivo de combustíveis fósseis.
+              </li>
+              <li>
+                <strong>Divisão internacional do trabalho:</strong> países
+                industrializados produzem manufaturados; colônias fornecem
+                matérias-primas.
+              </li>
+            </ul>
+
+            <section class="questoes">
+              <h3>Questões de vestibular</h3>
+              <details class="q">
+                <summary>
+                  <strong>Questão 1.</strong> Entre os fatores que explicam o
+                  pioneirismo inglês na Revolução Industrial, destaca-se:
+                </summary>
+                <ol type="a">
+                  <li>
+                    a ausência de reservas minerais, o que estimulou a inovação.
+                  </li>
+                  <li>
+                    o acúmulo de capital, as reservas de carvão e ferro e a mão
+                    de obra liberada do campo.
+                  </li>
+                  <li>a inexistência de colônias.</li>
+                  <li>o predomínio da economia feudal.</li>
+                  <li>a proibição do comércio externo.</li>
+                </ol>
+                <p class="gab"><strong>Gabarito: B.</strong></p>
+              </details>
+              <details class="q">
+                <summary>
+                  <strong>Questão 2.</strong> Um efeito direto da
+                  industrialização sobre o espaço geográfico foi:
+                </summary>
+                <ol type="a">
+                  <li>o esvaziamento das cidades.</li>
+                  <li>o fim da divisão do trabalho.</li>
+                  <li>
+                    o êxodo rural e o crescimento acelerado das cidades
+                    industriais.
+                  </li>
+                  <li>a redução do consumo de energia.</li>
+                  <li>o desaparecimento das classes sociais.</li>
+                </ol>
+                <p class="gab"><strong>Gabarito: C.</strong></p>
+              </details>
+            </section>
+            <p class="refs">
+              <strong>Referências:</strong> HOBSBAWM, E.
+              <em>A Era das Revoluções</em>; ENEM — provas de Ciências Humanas
+              sobre industrialização e urbanização; IBGE — Atlas geográfico
+              escolar.
+            </p>
+          </article>
+
+          <!-- ============ 8 ============ -->
+          <article class="post" id="primavera-arabe">
+            <span class="badge">Geopolítica</span>
+            <h2>Primavera Árabe: causas, países envolvidos e desdobramentos</h2>
+            <p class="meta">Publicado em <time>23/11/2026</time></p>
+            <img
+              class="capa"
+              src="https://imagenes.elpais.com/resizer/v2/YCKGYOUNUFDM7LDDCOZ7WAZY7E.jpg?auth=d43f349e18785c25afd56eb10f188955af713095b8e15d45abff236c5f372bce&width=1960&height=1470&focal=2126%2C1178"
+              alt="Manifestantes na Praça Tahrir, no Cairo, em 2011."
+            />
+            <p class="lead">
+              Onda de protestos iniciada em 2010–2011 no mundo árabe contra
+              regimes autoritários, desemprego e corrupção.
+            </p>
+
+            <h3>Como começou</h3>
+            <p>
+              Em dezembro de 2010, o vendedor ambulante Mohamed Bouazizi ateou
+              fogo ao próprio corpo na Tunísia, em protesto contra a repressão e
+              a falta de oportunidades. O ato desencadeou manifestações que
+              derrubaram o presidente Ben Ali em janeiro de 2011 e se espalharam
+              pela região.
+            </p>
+
+            <h3>Causas</h3>
+            <ul>
+              <li>
+                Regimes autoritários de longa duração e ausência de liberdades
+                políticas.
+              </li>
+              <li>Desemprego elevado, sobretudo entre jovens escolarizados.</li>
+              <li>Corrupção e desigualdade social.</li>
+              <li>Alta no preço dos alimentos.</li>
+              <li>
+                Uso de redes sociais para organizar e divulgar os protestos.
+              </li>
+            </ul>
+
+            <h3>Principais países e resultados</h3>
+            <table>
+              <tr>
+                <th>País</th>
+                <th>Resultado</th>
+              </tr>
+              <tr>
+                <td>Tunísia</td>
+                <td>Queda de Ben Ali; transição democrática</td>
+              </tr>
+              <tr>
+                <td>Egito</td>
+                <td>
+                  Queda de Mubarak; depois eleição de Mursi, golpe militar em
+                  2013
+                </td>
+              </tr>
+              <tr>
+                <td>Líbia</td>
+                <td>
+                  Guerra civil, intervenção da OTAN, morte de Kadafi;
+                  instabilidade prolongada
+                </td>
+              </tr>
+              <tr>
+                <td>Síria</td>
+                <td>
+                  Guerra civil de longa duração, crise humanitária e de
+                  refugiados
+                </td>
+              </tr>
+              <tr>
+                <td>Iêmen</td>
+                <td>Renúncia de Saleh; guerra civil</td>
+              </tr>
+              <tr>
+                <td>Bahrein, Marrocos, Jordânia</td>
+                <td>Protestos, com reformas limitadas ou repressão</td>
+              </tr>
+            </table>
+
+            <h3>Desdobramentos</h3>
+            <p>
+              Resultados muito diferentes entre os países: só a Tunísia teve
+              transição democrática mais duradoura. Houve ainda crise migratória
+              para a Europa, fortalecimento de grupos extremistas em contextos
+              de guerra civil e rearranjos geopolíticos na região.
+            </p>
+
+            <section class="questoes">
+              <h3>Questões de vestibular</h3>
+              <details class="q">
+                <summary>
+                  <strong>Questão 1.</strong> A Primavera Árabe teve início em
+                  2010–2011, em país do norte da África, e foi marcada por:
+                </summary>
+                <ol type="a">
+                  <li>guerra entre países europeus.</li>
+                  <li>
+                    protestos populares contra governos autoritários, desemprego
+                    e corrupção, com forte uso de redes sociais.
+                  </li>
+                  <li>disputas por fronteiras na Ásia Central.</li>
+                  <li>revoluções comunistas.</li>
+                  <li>intervenções soviéticas.</li>
+                </ol>
+                <p class="gab">
+                  <strong>Gabarito: B.</strong> Iniciada na Tunísia.
+                </p>
+              </details>
+              <details class="q">
+                <summary>
+                  <strong>Questão 2.</strong> Entre os países atingidos pela
+                  Primavera Árabe, aquele em que o processo evoluiu para uma
+                  guerra civil prolongada, com grande número de refugiados, foi:
+                </summary>
+                <ol type="a">
+                  <li>Tunísia.</li>
+                  <li>Marrocos.</li>
+                  <li>Síria.</li>
+                  <li>Jordânia.</li>
+                  <li>Catar.</li>
+                </ol>
+                <p class="gab"><strong>Gabarito: C.</strong></p>
+              </details>
+            </section>
+            <p class="refs">
+              <strong>Referências:</strong> ENEM — questões sobre mundo árabe e
+              conflitos contemporâneos; ACNUR — Crise de refugiados sírios; Le
+              Monde Diplomatique Brasil — Primavera Árabe.
+            </p>
+          </article>
         </div>
       </div>
-      <div id="out" aria-live="polite"></div>
     </main>
     <footer class="site">
       <div class="wrap">
-        GeoBlog © <span id="y"></span> · Pedro Agostinho Carrero e Talita Assis
-        Godoy · DS3<br />
+        GeoBlog © 2026 · Pedro Agostinho Carrero e Talita Assis Godoy · DS3<br /><small
+          >Questões elaboradas no estilo ENEM/vestibulares, para estudo.</small
+        >
       </div>
     </footer>
-    <script src="js/config.js"></script>
-    <script src="js/api.js"></script>
-    <script src="js/globe.js"></script>
-    <script src="js/main.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
