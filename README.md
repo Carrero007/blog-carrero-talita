@@ -13,7 +13,12 @@ Blog estático com artigos de Geografia para ENEM e vestibulares, feito como tra
 7. Revolução Industrial
 8. Primavera Árabe
 
+<<<<<<< HEAD
 Cada artigo traz texto explicativo, tabelas, tópicos que mais caem nas provas e questões no estilo ENEM/vestibulares, com gabarito comentado.
+=======
+## Uso
+- Novo artigo → preencha, monte exatamente 3 perguntas → **Publicar**. Rascunhos aceitam menos de 3. Data de publicação futura agenda o artigo.
+>>>>>>> dcf22c3932421007b93e3a69615018c24726bb60
 
 ## Estrutura
 
